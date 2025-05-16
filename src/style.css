@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+:root {
+    --primary-color: #F5F5F5;
+    --primaryoverlay-color: #f5f5f56d; 
+    --secondary-color: #030303;
+    --backgroundc1: #0d1b2a;
+    --accent-color: #40BCC0;
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+/* my header starts here */
+header{
+    
+    background-image:url("../img/Hero-Image2.jpg");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--primary-color);
+    min-height: 100vh;
+    /* position: relative; */
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.topbar-icons img,
+.topbar-icons2 img
+{
+    margin: 0 0.5rem;
+}
+
+.topbar-icons a {
+    text-decoration: none;
+}
+
+.topbar-icons img:hover,
+.topbar-icons2 img:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.siteLogo{
+    font-family: "Montez", cursive;
+}
+
+.navbar{
+    background-color: var(--primaryoverlay-color);
+    background-blend-mode: multiply;
+    padding: 0 20%;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    padding: 1rem 5rem;
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar ul li a,
+.navbar ul li a:visited
+{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus{
+    color: var(--accent-color);
+}
+
+.heroSection {
+    margin: 2rem auto;
+    max-width: 70%;
+    padding: 4rem 2rem;
+}
+
+.leftarrow {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    cursor: pointer;
+}
+.leftarrow:hover {
+    opacity: 0.9;
+
+}
+
+.rightarrow {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    cursor: pointer;
+}
+.rightarrow:hover {
+    opacity: 0.9;
+
+}
+
+.herosection-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heroSection img {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.hero-contact {
+    display: block;
+}
+
+.hero-contact p {
+    display: inline-block;
+    font-family: "open sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 0.5;
+    letter-spacing: 0.1rem;
+    word-spacing: 1/2rem;
+    margin: 1rem auto;
+    
+}
+
+.HeroBtn,
+.HeroBtn:visited
+{
+    font-family: "open sans", sans-serif;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.HeroBtn:hover,
+.HeroBtn:focus
+{
+    opacity: 0.8;
+    transition: 300ms;
+}
+
+/* my header ends here */
+/* my main section */
+.aboutUs{
+    min-height: 400px;
+    padding: 4rem 10rem;
+}
+.aboutUs h2, .ourportfolio h2, 
+.ourServices h2, .ourtestimonials h2, 
+.ourArtists h2 {
+    font-family: "Montez", cursive;
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.innercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 70%;
+    padding: 4rem 5rem;
+}
+
+.innercontainer img{
+    border-radius: 1rem;
+}
+
+.welcomebox{
+    padding-left: 3rem;
+}
+
+.welcomebox h3 {
+    /* font-family: "Montez", cursive; */
+    font-size: 2rem;
+}
+
+/*Here my divider styling starts.*/
+
+.divider {
+    height: 4px;
+    background-color: var(--accent-color);
+    border: none;
+    width: 50%;
+    margin: 2rem 0;
+}
+
+.divider-short {
+    height: 4px;
+    background-color: var(--accent-color);
+    border: none;
+    width: 20%;
+    margin: 1rem auto;
+}
+
+.white {
+    background-color: var(--primary-color);
+}
+
+/* Here my divider styling stops */
+
+
+/* Our portfolio section starts here*/
+.ourportfolio{
+    background-color: var(--backgroundc1) ;
+    color: var(--primary-color);
+    padding-bottom: 5rem;
+}
+
+.innercontainertwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 2rem;
+    margin-inline: 0 auto;
+    min-height: 400px;
+    padding: 0 1rem;
+}
+
+.galleryImg{
+    width: 250px;
+    height: 350px;
+    border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    header{
+        height: 50vh;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
