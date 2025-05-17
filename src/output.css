@@ -1,0 +1,7 @@
+/*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
+.grid {
+  display: grid;
+}
+.inline {
+  display: inline;
+}
